@@ -1,0 +1,88 @@
+
+.contact-us {
+  background-color: #F0F1F0;
+  padding: 1em 0;
+}
+
+.contact-us header .title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact-us .contacts {
+  display: grid;
+  gap: 1.5em;
+  justify-content: center;
+  grid-template-columns: repeat(1, minmax(100px, 300px));
+  padding: 2em 0;
+}
+
+.contact-us .contacts .contact {
+  background-color: white;
+  padding: 2em;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05),0 10px 25px rgba(0,0,0,0.08);
+  cursor:default;
+}
+
+.contact-us .contacts .contact .bi-whatsapp, .bi-envelope, .bi-hand-index, .bi-telephone-outbound, .bi-geo-alt-fill {
+  font-size: 3rem;
+  color: rgb(42, 42, 42);
+  margin-bottom: .4em;
+  display: block;
+  font-weight: 0;
+  cursor:default;
+}
+
+.contact-us .contacts .contact  .bi-telephone-outbound {
+  cursor:default;
+}
+
+
+.contact-us .contacts .contact .bi-whatsapp {
+  color: green;
+}
+
+.contact-us .contacts .contact .bi-envelope{
+  color: rgb(23, 120, 255);
+  cursor:default;
+
+}
+
+.contact-us .contacts .contact .bi-geo-alt-fill {
+  color: rgb(255, 49, 49);
+  cursor:default;
+
+}
+
+.contact-us .contacts .contact .bi-telephone-outbound {
+  color: rgb(43, 131, 254);
+  cursor:default;
+}
+
+.contact-us .contacts .contact .contact-name {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+
+.contact-us .contacts .contact p:nth-of-type(2) a{
+  color:#1f99db;
+  margin-bottom: 2em;
+  display: block;
+
+}
+
+@media screen and (min-width: 600px) {
+  .contact-us .contacts {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .contact-us .contacts {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+  }
+}

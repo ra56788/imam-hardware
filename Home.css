@@ -1,0 +1,276 @@
+
+.slides {
+  position: relative;
+  user-select: none;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+img.display-slide {
+  display: block;
+  animation: fade;
+  animation-duration: 1.8s;
+}
+
+@keyframes fade {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
+
+.slides button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: .6em .4em;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider .next {
+  right: 0;
+}
+
+.slider .prev {
+  left: 0;
+}
+
+.our-products {
+  padding: 1em 0;
+  padding-bottom: 0;
+}
+
+.our-products header .title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 1em 0;
+}
+
+.our-products .products {
+  user-select: none;
+  display: grid;
+  background: linear-gradient(
+    135deg,
+    #7bd3ff,
+    #5cc3f7,
+    #329dd7
+  );
+  justify-content: center;
+  gap: 1em;
+  padding: 2em 0;
+  grid-template-columns: repeat(1,320px);
+}
+
+.our-products .products .product {
+  text-align: center;
+}
+
+.our-products .products .product img {
+  width: 85%;
+  border-radius: 30px;
+  height: auto;
+  cursor: pointer;
+  aspect-ratio: 1/1;
+}
+
+.our-products .products .product p {
+  padding: 1em;
+  text-transform:uppercase;
+}
+
+.top-brands {
+  margin: 0;
+  padding: 2em 0;
+  background-color: #f3f1f1;
+}
+
+.top-brands header .title {
+  font-size: 2.1rem;
+  padding-top: .5em;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(61, 61, 61);
+}
+
+.top-brands header ul {
+  padding: 4em 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+}
+
+.top-brands header ul li a {
+  color: rgb(56, 56, 56);
+  text-decoration: none;
+  border: 1.5px solid rgb(56, 56, 56);
+  padding: 1em 2.2em;
+  border-radius: 7px;
+  background-color: rgb(245, 245, 245);
+  font-size: 1.15rem;
+  letter-spacing: .3px;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+}
+
+.top-brands header ul li a.active {
+  color: black;
+  border: 2px solid black;
+  font-weight: 600;
+}
+
+.top-brands .box {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.top-brands .products {
+  display: none;
+  gap: 1.5em;
+  transition: transform 0.4s ease;
+  user-select: none;
+  
+  }
+
+.top-brands .box .next {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: .6em .4em;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.top-brands .box .prev {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: .6em .4em;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.top-brands .products .product {
+  background-color: white;
+  flex: 1 0 19rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-brands .products .product img {
+  padding-bottom: 1em;
+  aspect-ratio: 1/1;
+  height: auto;
+  width: 100%;
+  user-select: none;
+}
+
+.top-brands .products .product .product-details {
+  background-color: #FAFBFA;
+  padding: 1.5em 0em 3em 0;
+}
+
+.top-brands .products.display-g {
+  display: flex;
+}
+
+.top-brands .products .product .product-details .product-title {
+  font-size: 1.1rem;
+  padding-bottom: 23px;
+  padding-left: 25px;
+}
+
+.top-brands .products .product .product-details .product-feature {
+  font-size: .9rem;
+  color: rgb(134, 134, 134);
+  padding-bottom: 23px;
+  padding-left: 25px;
+}
+
+.top-brands .products .product .product-details .product-price {
+  font-size: 1.2rem;
+  color: #1f99db;
+  font-weight: 600;
+  padding-bottom: 23px;
+  padding-left: 25px;
+}
+
+.top-brands .products .product .product-details .buttons {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 5px;
+}
+
+.top-brands .products .product .product-details .buttons button:first-child {
+  border: 1px solid #1f99db;
+  background-color: #FAFBFA;
+  padding: .8em 1.5em;
+  color: #1f99db;
+  width: 45%;
+  border-radius: 25px;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.top-brands .products .product .product-details .buttons button:last-child {
+  border: none;
+  background-color: #1f99db;
+  padding: .8em 1.5em;
+  color: #FAFBFA;
+  width: 45%;
+  border-radius: 23px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .top-brands .products .product {
+    flex: 1 0 22rem;
+  }
+}
+
+
+
+@media screen and (min-width: 770px) {
+  .our-products .products {
+    grid-template-columns: repeat(2,400px);
+    gap: .2em;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .our-products .products {
+    grid-template-columns: repeat(4,280px);
+    gap: 2em;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+  .our-products .products {
+    grid-template-columns: repeat(4,350px);
+    }
+}

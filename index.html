@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://www.livemint.com/lm-img/markets/logo/tr/S0003583.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="Navbar.css">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="Footer.css">
+  <title>Imam Hardwares</title>
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container row">
+      <div>
+        <p class="website-title">Imam</p>
+        <p style="text-align: center;user-select: none;">Hardware</p>
+      </div>
+      <i class="bi bi-list"></i> 
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item nav-item-active"><a href="index.html" class="nav-link nav-link-active">Home</a></li>
+          <li class="nav-item nav-item-active"><a href="#" class="nav-link nav-link-active">Corporate</a></li>
+
+          <li class="nav-item desktop-product-nav-item">
+            <a href="#" class="nav-link">Products</a>
+            <ul class="nav-list ">
+              <li><a href="./Wires&Cables.html"> Wires & Cables</a></li>
+              <li><a href="./Fan.html"> Fans</a></li>
+              <li><a href="./Tap.html"> Tap</a></li>
+              <li><a href="./Paints.html"> Paint</a></li>
+              <li><a href="./Fan.html"> Home Appliance</a></li>
+              <li><a href="./Conduits&Fittings.html"> Conduits & Fittings</a></li>
+              <li><a href="./Pipe.html"> Pipe</a></li>
+              <li><a href="./Switches.html"> Switches</a></li>
+              <li><a href="./Screw.html"> Screw</a></li>
+              <li><a href="./Lights.html"> Light</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item nav-item-active"><a href="#" class="nav-link nav-link-active">Shopnow</a></li>
+          <li class="nav-item"><a href="AboutUs.html" class="nav-link">About-US</a></li>
+          <li class="nav-item"><a href="ContactUs.html" class="nav-link">Contact-us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-navbar">
+    <i class="bi bi-x"></i> 
+
+    <nav class="mobile-nav">
+        <ul class="nav-list">
+          <li class="nav-item nav-item-active"><a href="./index.html" class="nav-link nav-link-active">Home</a></li>
+          <li class="nav-item nav-item-active"><a href="#" class="nav-link nav-link-active">Corporate</a></li>
+
+          <li class="nav-item product-nav-item">
+            <a href="#" class="nav-link">Products<i class="bi bi-chevron-down" ></i></a>
+            <ul class="nav-list">
+              <li><a href="./Wires&Cables.html">- Wires & Cables</a></li>
+              <li><a href="./Fan.html">- Fans</a></li>
+              <li><a href="./Tap.html">- Tap</a></li>
+              <li><a href="./Paints.html">- Paint</a></li>
+              <li><a href="./Fan.html">- Home Appliance</a></li>
+              <li><a href="./Conduits&Fittings.html">- Conduits & Fittings</a></li>
+              <li><a href="./Pipe.html">- Pipe</a></li>
+              <li><a href="./Switches.html">- Switches</a></li>
+              <li><a href="./Screw.html">- Screw</a></li>
+              <li><a href="./Lights.html">- Light</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a href="AboutUs.html" class="nav-link">About-us</a></li>
+          <li class="nav-item"><a href="ContactUs.html" class="nav-link">Contact-us</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+      <picture class="slide">
+        <source media="(max-width: 600px)" srcset="./Mobile.png">
+        <source media="(max-width: 1200px)" srcset="./Tablet.png">
+        <img src="./Desktop.png">
+        </picture>
+        <picture class="slide">
+          <source media="(max-width: 600px)" srcset="./Mobile_22.png">
+          <source media="(max-width: 1200px)" srcset="./Tablet_2.png" class="tablet-image">
+          <img src="./Desktop_2.png" class="desktop-image">
+        </picture>
+        <picture class="slide">
+          <source media="(max-width: 600px)" srcset="./Mobile_3.png">
+          <source media="(max-width: 1200px)" srcset="./Tablet_3.png" class="tablet-image">
+          <img src="./Desktop_3.png" class="desktop-image">
+        </picture>
+        <button class="prev" onclick="nextSlide()">&#10094</button>
+        <button class="next" onclick="prevSlide()">&#10095</button>
+    </div> <!--slides-->
+  </div> <!--slider-->
+
+  <div class="our-products">
+    <header>
+      <p class="title">OUR PRODUCTS</p>
+    </header>
+      <div class="products">
+        <div class="product">
+          <img src="https://www.finolex.com/UploadedImages/Cables_Original.png" alt="" onclick="wirePage()">
+          <p>wires & cables</p>
+        </div>
+        <div class="product">
+          <img src="https://www.finolex.com/UploadedImages/Fans_Original.png" alt="" onclick="fanPage()">
+          <p>fans</p>
+        </div>
+         <div class="product">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/070/404/258/small/stainless-steel-faucet-stands-out-against-a-warm-yellow-tile-backdrop-highlighting-modern-design-and-functionality-in-a-contemporary-kitchen-photo.jpeg" alt="" onclick="SilverTapPage()">
+          <p>Silver tap</p>
+        </div>
+        <div class="product">
+          <img src="https://cdn.dotpe.in/longtail/store-items/1036875/FzXTfkIB.webp" alt="" onclick="paintPage()">
+          <p>Paints</p>
+        </div>
+        <div class="product">
+          <img src="https://www.finolex.com/UploadedImages/Room%20Heaters.jpg" alt="" onclick="fanPage()">
+          <p>Home Appliances - Room Heaters</p>
+        </div>
+        <div class="product">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/071/813/222/small/3d-rendering-of-a-blue-faucet-with-water-dripping-photo.jpeg" alt="" onclick="tapPage()">
+          <p>Tap</p>
+        </div>
+        <div class="product">
+          <img src="https://www.finolex.com/UploadedImages/home%20page%20conduits%20(4).png" alt="" onclick="conduitsFittingsPage()">
+          <p>Conduits & Fittings</p>
+        </div>
+        <div class="product">
+          <img src="https://images.pexels.com/photos/29301874/pexels-photo-29301874.jpeg" alt="" onclick="PipePage()">
+          <p>PIPE</p>
+        </div>
+        
+        <div class="product">
+          <img src="https://www.finolex.com/UploadedImages/Switch.png" alt="" onclick="swicthPage()">
+          <p>switches</p>
+        </div>
+        <div class="product">
+          <img src="https://images.pexels.com/photos/31745739/pexels-photo-31745739.jpeg" alt="" onclick="screwPage()">
+          <p>screw</p>
+        </div>
+        <div class="product">
+          <img src="https://www.finolex.com/UploadedImages/image%2010%20(1).png" alt="" onclick="lightPage()">
+          <p>LIGHTS</p>
+        </div>
+        <div class="product">
+          <img src="https://media.istockphoto.com/id/1761278424/photo/rainwater-storage-tank.jpg?s=612x612&w=0&k=20&c=cJC2tBE5ho4z6f3GTEb30brvVb2bJXtZ-wKWrJsFGAk=" alt="" onclick="tankPage()">
+          <p>TANK</p>
+        </div>
+    </div>
+  </div><!--our-products-->
+
+  <div class="top-brands">
+    <div class="container">
+      <header>
+        <p class="title">TOP BRANDS</p>
+        <ul>
+          <li><a href="">Havells</a></li>
+          <li><a href="#">Crompton</a></li>
+          <li><a href="#">Asian</a></li>
+        </ul>
+      </header>
+      <div class="box">
+        <div class="havells products">
+          <div class="product">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/import/flexible_cables/life_shield/90m/black.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Life Shield HFFR 1.0 sq. mm Cables</p>
+              <p class="product-feature">Halogen Flame Retardant 90 m, (1.0 sq. mm)</p>
+              <p class="product-price">₹ 2, 156.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/h/a/havells_epic_odv_pro_voice-white_1__1.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Epic Voice BLDC Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Elegant White)</p>
+              <p class="product-price">₹ 4 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/f/h/fhctr1sacu48_star_1.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">EP Trendy ES Special Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Antique Copper)</p>
+              <p class="product-price">₹ 5 ,099.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/import/flexible_cables/life_guard/90m/blue.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Life Guard FR-LSH 1.0 sq. mm Cables</p>
+              <p class="product-feature">Flame Retardant Low Smoke, 90 m (1.0 sq. mm)</p>
+              <p class="product-price">₹ 2, 119.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://havells.com/media/catalog/product/cache/bebb556ccaa04236261d8ba5676ddf4d/h/a/havells_epic_odv_pro_voice-white_1__1.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Epic Voice BLDC Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Elegant White)</p>
+              <p class="product-price">₹ 4 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+        </div> <!--havells products-->
+        <div class="crompton products">
+          <div class="product">
+            <img src="https://www.crompton.co.in/cdn/shop/files/slimo_1.png?format=webp&v=1721887725&width=350" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Epic Voice BLDC Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Elegant White)</p>
+              <p class="product-price">₹ 4 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61U6Jw+rg-L._SX522_.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">EP Trendy ES Special Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Antique Copper)</p>
+              <p class="product-price">₹ 5 ,099.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61+RGR+Nk8L._SX522_.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Epic BLDC Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Cocoa Brown)</p>
+              <p class="product-price">₹ 3, 799.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71R41lA+DML._SX679_.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Crista BLDC Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Champagne)</p>
+              <p class="product-price">₹ 10, 349.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61U6Jw+rg-L._SX522_.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">EP Trendy ES Special Ceiling Fan</p>
+              <p class="product-feature">1200 mm (Antique Copper)</p>
+              <p class="product-price">₹ 5 ,099.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+        </div> <!--crompton products-->
+        <div class="asian products">
+          <div class="product">
+            <img src="https://i1.sndcdn.com/artworks-000047833942-b3g8nf-t500x500.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Asian Promise Enamel</p>
+              <p class="product-feature">4 Litres, Golden Yellow</p>
+              <p class="product-price">₹ 1 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://kumaranco.com/wp-content/uploads/2023/04/asian-paints-royale-10-l-interior-emulsion-base-1.jpeg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Asian Tractor Premium</p>
+              <p class="product-feature">4 Litres, Golden Yellow</p>
+              <p class="product-price">₹ 1 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://paintnhardware.com/44-large_default/asian-paints-pu-exterior-glossy-clear-1l.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Dulux Promise Enamel</p>
+              <p class="product-feature">4 Litres, Golden Yellow</p>
+              <p class="product-price">₹ 1 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71PAiuIEuWL._SX679_.jpg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Dulux Promise Enamel</p>
+              <p class="product-feature">4 Litres, Golden Yellow</p>
+              <p class="product-price">₹ 1 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+          <div class="product">
+            <img src="https://kumaranco.com/wp-content/uploads/2023/04/asian-paints-royale-10-l-interior-emulsion-base-1.jpeg" alt="fan">
+            <div class="product-details">
+              <p class="product-title">Asian Tractor Premium</p>
+              <p class="product-feature">4 Litres, Golden Yellow</p>
+              <p class="product-price">₹ 1 ,999.00</p>
+              <div class="buttons">
+                <button>View Details</button>
+                <button>Call Now</button>
+              </div> <!--buttons-->
+            </div>
+          </div>
+        </div><!--asian products-->
+        <button class="prev" onclick="nextSlide()">&#10094</button>
+        <button class="next" onclick="prevSlide()">&#10095</button>
+      </div> <!--box-->
+
+      
+    </div> <!--container-->
+  </div>
+
+
+
+  <footer style="margin-top: 1em;">
+    <div class="container row">
+
+      <div class="first">
+        <p style="margin-bottom: .4em;"><a href="#" class="website-title">Imam</a></p>
+        <span style="color: white;padding-top: 12em;">Hardware</span>
+
+        <div class="gallerys">
+          <img src="https://static.wixstatic.com/media/01ab6619093f45388d66736ec22e5885.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/01ab6619093f45388d66736ec22e5885.png" alt="">
+          <img src="https://static.wixstatic.com/media/9c486556465843c5850fabfd68dfae49.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9c486556465843c5850fabfd68dfae49.png" alt="">
+          <img src="https://static.wixstatic.com/media/23fd2a2be53141ed810f4d3dcdcd01fa.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/23fd2a2be53141ed810f4d3dcdcd01fa.png" alt="">
+          <img src="https://static.wixstatic.com/media/81af6121f84c41a5b4391d7d37fce12a.png/v1/fill/w_44,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81af6121f84c41a5b4391d7d37fce12a.png" alt="">
+        </div>
+      </div><!--first-->
+
+      <div class="second">
+        <a href="#" class="title">FOR CONSUMER</a>
+        <ul>
+          <li><a href="#"> Wires & Cables</a></li>
+              <li><a href="#"> Fans</a></li>
+              <li><a href="#"> Tap</a></li>
+              <li><a href="#"> Paint</a></li>
+              <li><a href="#"> Home Appliance</a></li>
+        </ul>
+      </div>
+
+      <div class="third">
+        <a href="#" class="title">OUR BRANDS</a>
+        <ul>
+          <li><a href="#">Havells</a></li>
+          <li><a href="#">Finolex</a></li>
+          <li><a href="#">Crompton</a></li>
+          <li><a href="#">Asian</a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="four">
+        <a href="#" class="title">QUICK LINKS</a>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sales Enqiry</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Webmail</a></li>
+        </ul>
+      </div>
+
+      <div class="five">
+        <a href="#" class="title">OFFERS</a>
+        <ul>
+          <li><a href="#">Cashback Coupon</a></li>
+          <li><a href="#">EV Offer</a></li>
+          <li><a href="#">Cash Back</a></li>
+          <li><a href="#">Save More</a></li>
+          <li><a href="#">Fans Free Coupon</a></li>
+        </ul>
+      </div>
+
+      
+    </div> <!--container-->
+
+    <p class="copyright-parag">© 2026. Imam Harware Ltd. All rights reserved</p>
+  </footer>
+
+  <div class="overlay"></div>
+
+
+<script src="Home_Slider.js"></script>
+<script src="Home_TopBrands.js"></script>
+<script>
+  function fanPage() {
+    window.location.href = "Fan.html";
+  }
+  function wirePage() {
+    window.location.href = "Wires&Cables.html";
+  }
+  function SilverTapPage() {
+    window.location.href = "SilverTap.html";
+  }
+  function paintPage() {
+    window.location.href = "Paints.html";
+  }
+  function conduitsFittingsPage() {
+    window.location.href = "Conduits&Fittings.html";
+  }
+  function tapPage() {
+    window.location.href = "Tap.html";
+  }
+  function PipePage() {
+    window.location.href = "Pipe.html";
+  }
+  function swicthPage() {
+    window.location.href = "Switches.html";
+  }
+  function screwPage() {
+    window.location.href = "Screw.html";
+  }
+  function lightPage() {
+    window.location.href = "Lights.html";
+  }
+  function tankPage() {
+    window.location.href = "Tank.html";
+  }
+</script>
+<script src="Mobile_Navbar.js"></script>
+</body>
+</html>
